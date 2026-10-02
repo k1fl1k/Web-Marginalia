@@ -1,0 +1,29 @@
+{
+  "name": "Web-Marginalia",
+  "version": "0.1.0",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently -n \"VITE,TS\" -c \"blue,green\" \"vite\" \"tsc --watch --preserveWatchOutput\"",
+    "build": "tsc && vite build"
+  },
+  "devDependencies": {
+    "@crxjs/vite-plugin": "^2.7.1",
+    "@types/chrome": "^0.0.306",
+    "concurrently": "^10.0.5",
+    "typescript": "^5.9.3",
+    "vite": "^5.4.21"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "11.23.0",
+      "onFail": "download"
+    }
+  },
+  "packageManager": "pnpm@11.23.0",
+  "type": "module"
+}

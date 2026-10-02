@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./popup.css" />
+  <title>Web Marginalia</title>
+</head>
+<body>
+  <div class="popup-container">
+    <header class="popup-header">
+      <h1>Web Marginalia</h1>
+      <span id="badge" class="badge">0</span>
+    </header>
+    <main class="popup-content">
+      <input type="text" id="search-input" placeholder="Пошук нотаток..." />
+      <div id="notes-list" class="notes-list">
+        <p class="empty-state">Нотаток на цій сторінці немає</p>
+      </div>
+    </main>
+  </div>
+  <script type="module" src="./index.ts"></script>
+</body>
+</html>
